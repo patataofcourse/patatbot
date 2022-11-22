@@ -34,13 +34,13 @@ async def aexec(ctx, *args):
 async def execcmd(ctx, code):
     await ctx.send(eval(code))
 
-@roles.is_collab()
+@roles.is_helper()
 @commands.command(name="kill", usage="", description="Kills the bot.", aliases=("ded","die"))
 async def kill(ctx):
     await ctx.send(BOT_KILL_MESSAGE)
     await ctx.bot.close()
 
-@roles.is_collab()
+@roles.is_helper()
 @commands.command(name="errwipe", usage="", description="Deletes all /error files.", aliases=("ew",))
 async def errwipe(ctx):
     if platform.system() not in ("Linux", "Windows", "Darwin"):

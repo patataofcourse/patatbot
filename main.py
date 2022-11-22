@@ -48,8 +48,7 @@ activity_type = { "playing": discord.ActivityType.playing,
                 }.get(args.activity_type, discord.ActivityType.playing)
 
 #load bot
-i = discord.Intents.default()
-i.members=True
+i = discord.Intents.default() # add privileged intents in the future if you need
 bot = commands.Bot(prefix, intents=i, owner_ids=BOT_OWNERS)
 bot.command_prefix = prefix
 bot.remove_command("help") #default help command

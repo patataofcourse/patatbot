@@ -6,7 +6,6 @@ from constants import *
 def setup(bot):
     bot.add_command(debug)
     global module_errors
-    global test_errors
     module_errors = bot.module_errors
     if module_errors == "": module_errors = "No errors! :D"
     
