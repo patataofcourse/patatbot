@@ -5,7 +5,7 @@ Ready to use base for discord bots
 The result of me fucking with Discord bots since the year 2019 :D
 
 ## How to use
-- Install discord.py with `python -m pip install discord.py`
+- Install discord.py with `python -m pip install discord.py==1.7.3` (i might add 2.0 support in the future)
 - Fill in the values at constants.py
     - `BOT_NAME` (string) - name of your bot
     - `BOT_VERSION` (string) - current version of your bot
